@@ -3,6 +3,14 @@
   text-align: center;
 }
 
+.App .flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
+
 .icon-wrapper {
   position: relative;
 }
@@ -20,6 +28,13 @@
 .icon-exit-active {
   opacity: 0;
   transition: opacity 300ms ease-out;
+}
+
+.rs-panel-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 

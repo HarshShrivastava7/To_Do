@@ -44,7 +44,7 @@ function AddToDo({setNewToDo, newToDo}) {
   
 
   return (
-    <div className="App">
+    <div className="App flex">
       <InputGroup style={styles} onClick={() => setFirstClick(true)}>
         <InputGroup.Addon>
           <div className="icon-wrapper">
@@ -55,7 +55,7 @@ function AddToDo({setNewToDo, newToDo}) {
                 classNames="icon"
                 unmountOnExit
               >
-                {!isFirstClick ? <Plus /> : <Trash />}
+                {!isFirstClick ? <Plus style = {{cursor : "pointer"}} /> : <Trash style = {{cursor : "pointer"}} />}
               </CSSTransition>
             </TransitionGroup>
           </div>
