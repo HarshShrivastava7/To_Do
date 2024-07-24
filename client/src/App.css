@@ -1,0 +1,25 @@
+@import "rsuite/dist/rsuite.css";
+.App {
+  text-align: center;
+}
+
+.icon-wrapper {
+  position: relative;
+}
+
+.icon-enter {
+  opacity: 0;
+}
+.icon-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.icon-exit {
+  opacity: 1;
+}
+.icon-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}
+
+
