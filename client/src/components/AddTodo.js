@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { IconButton, Input, InputGroup } from "rsuite";
+import { Input, InputGroup } from "rsuite";
 import { Plus, Trash } from "@rsuite/icons";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import '../stylesheets/App.css';
+
 
 const styles = {
   width: 300,
@@ -39,7 +41,7 @@ function AddToDo({setNewToDo, newToDo}) {
         setInputValue("");
         setFirstClick(false);
     }
-  }
+  };
 
   
 
@@ -55,7 +57,7 @@ function AddToDo({setNewToDo, newToDo}) {
                 classNames="icon"
                 unmountOnExit
               >
-                {!isFirstClick ? <Plus style = {{cursor : "pointer"}} /> : <Trash style = {{cursor : "pointer"}} />}
+                {!isFirstClick ? <Plus style = {{cursor : "pointer", color: '#2564cf'}} /> : <Trash style = {{cursor : "pointer", color: '#2564cf'}} />}
               </CSSTransition>
             </TransitionGroup>
           </div>

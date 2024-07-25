@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './App.css';
+import './stylesheets/App.css';
 import CustomNavbar from './components/CustomNavbar';
 import AddToDo from './components/AddTodo';
 import AllToDos from './components/AllToDos';
@@ -40,12 +40,13 @@ function App() {
   useEffect(() => {
     console.log(list);
   }, [list]);
+
+
   return (
     <div className="App">
       <CustomNavbar activeKey={activeKey} onSelect={setActiveKey} />
       <AddToDo setNewToDo = {setNewToDo} newToDo = {newToDo} />
       <AllToDos list = {list} setNewToDo = {setNewToDo} newToDo = {newToDo} />
-      
     </div>
   );
 }
