@@ -30,7 +30,8 @@ function AllToDos({ list, newToDo, setNewToDo }) {
           "Content-Type": "application/json",
         },
       });
-    //   const data = await dltToDo.json();
+      const data = await dltToDo.json();
+      console.log(data);
       setNewToDo(!newToDo);
     } catch (error) {
       console.log(error.message);
