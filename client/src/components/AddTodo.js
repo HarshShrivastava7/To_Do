@@ -30,7 +30,7 @@ function AddToDo({setNewToDo, newToDo}) {
             });
 
             const data = await addTodo.json();
-            // console.log(data);
+            console.log(data);
             setNewToDo(!newToDo);
     
         } catch(error) {

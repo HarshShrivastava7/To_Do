@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav } from "rsuite";
+import { Navbar } from "rsuite";
 import "../stylesheets/App.css";
 
 function CustomNavbar({ onSelect, activeKey, ...props }) {
