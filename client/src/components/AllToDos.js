@@ -62,6 +62,7 @@ function AllToDos({ list, newToDo, setNewToDo }) {
         );
 
         const data = await updateTodo.json();
+        console.log(data);
         setNewToDo(!newToDo);
       } catch (error) {
         console.log(error.message);
