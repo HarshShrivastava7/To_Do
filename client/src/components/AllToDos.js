@@ -74,7 +74,7 @@ function AllToDos({ list, newToDo, setNewToDo }) {
   return (
     <div className="App flex">
       <Panel
-        header="All ToDo's"
+        header="All ToDo2's"
         shaded
         style={{
           backgroundColor: "#fffefb",
